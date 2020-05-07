@@ -1,0 +1,16 @@
+Package: microbesim
+Title: Monte-Carlo simulations for microbiome relative abundance data 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Quang",
+           family = "Nguyen",
+           role = c("aut", "cre"),
+           email = "quangpmnguyen@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package aims to provide a suite of functions to quickly simulate microbiome relative abundance data
+  following multiple schematics found in the literature.  
+License: AGPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
