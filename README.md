@@ -1,2 +1,1 @@
-# MCsim
-R package for simulating microbiome relative abundance data 
+# microbesim: R package for simulating microbiome relative abundance data 
