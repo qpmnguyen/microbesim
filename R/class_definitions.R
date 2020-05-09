@@ -26,7 +26,7 @@ simulation <- function(data, param, type){
 
 #' @title Data Slot
 #' @param x The simulation object
-methods::setGeneric("data", function(x) standardGeneric("data"))
+methods::setGeneric("data", function(object) standardGeneric("data"))
 
 #' @title Assigning new data to the data slot
 #' @param object The simulation object
@@ -42,16 +42,17 @@ methods::setMethod("data", "simulation", function(object) x@data)
 #' @param value Value to replace, is a named list
 #' @describeIn simulation Assigning data slot
 methods::setMethod("data<-", "simulation", function(object, value){
-  x@data <- value
-  methods::validObject(x)
+  object@data <- value
+  methods::validObject(object)
   x
 })
 
 #' @title Parameters slot
-methods::setGeneric("param", function(x) standardGeneric("param"))
-methods::setGeneric("param<-", function(x, value) standardGeneric("param<-"))
-methods::setMethod("param", "simulation", function(x) x@param)
-methods::setMethod("param<-", "simulation", function(x, value){
+#' @param object
+methods::setGeneric("param", function(object) standardGeneric("param"))
+methods::setGeneric("param<-", function(object, value) standardGeneric("param<-"))
+methods::setMethod("param", "simulation", function(object) x@param)
+methods::setMethod("param<-", "simulation", function(object, value){
   x@param <- value
   methods::validObject(x)
   x
