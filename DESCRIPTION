@@ -6,11 +6,17 @@ Authors@R:
            family = "Nguyen",
            role = c("aut", "cre"),
            email = "quangpmnguyen@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-2072-3279"))
 Description: This package aims to provide a suite of functions to quickly simulate microbiome relative abundance data
   following multiple schematics found in the literature.  
-License: AGPL-3
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
+Suggests: 
+    covr,
+    testthat
+Imports: 
+    lobstr,
+    factory
