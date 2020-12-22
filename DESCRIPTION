@@ -7,8 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "quangpmnguyen@gmail.com",
            comment = c(ORCID = "0000-0002-2072-3279"))
-Description: This package aims to provide a suite of functions to quickly simulate microbiome relative abundance data
-  following multiple schematics found in the literature.  
+Description: This package aims to provide a unified interface to quickly simulate microbiome relative abundance data
+  following multiple schematics found in the literature for different modelling tasks 
 License: MIT
 Encoding: UTF-8
 LazyData: true

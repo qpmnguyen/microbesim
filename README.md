@@ -6,20 +6,31 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-Using S3 objects to implement a unified interface to simulating microbiome relative abundance data, and the ability to estimate parameters or range of parameters from real data.   
+Defining a unified interface to implement simulations of microbiome relative abundance data, based on previous simulation designs. The goal of this package is to:  
+1. Enable quick simulations for testing different statistical packages from an implementation standpoint    
+2. Collet implementations of popular simulation designs  
+3. Modular design to extend simulations for methodological research   
 
-Simulation distributions  
-- [ ] Dirichlet-Multinomial distribution from real data  
-- [ ] Gamma-Poisson used in ANCOM and ANCOMBC  
-- [ ] Negative Binomial and Zero Inflated Negative Binomial distributions  
+Count distribution models   
+- [ ] Dirichlet-Multinomial distributions   
+- [ ] Gamma-Poisson distributions (used in ANCOM and ANCOMBC) 
+- [ ] Negative Binomial and Zero Inflated Negative Binomial distributions    
 
 Simulation tasks  
 - [ ] Differential Abundance  
-  - [ ] Simple inflated counts in McMurdie and Holmes  
-  - [ ] Compensation inflated counts in Hawinkle et al.  
+  - [ ] Simple inflated counts (McMurdie & Holmes)  
+  - [ ] Inflated counts with compensation (Hawinkle et al. & Weiss et al.) 
   - [ ] Simple inflated means  
 - [ ] Clustering  
-  - Using method that allows for differential tree structures Chen et al. 2013  
+  - [ ] Tree-based structures (Chen et al. 2013)
+  - [ ] Simple clustering   
 - [ ] Prediction  
   - [ ] Regression  
   - [ ] Binary classification  
+
+Additional considerations  
+  - [ ] Flexible correlation structures  
+    - [ ] Standard structures (independence, exchangable, AR1, unstructured) 
+    - [ ] Tree-based correlation structures  
+    - [ ] Network-baesd correlation structures 
+  - [ ] Provenance tracking and reproducibility  
